@@ -1,0 +1,111 @@
+tr[class="read"]{
+    background-image: linear-gradient(to bottom right,
+        lightgreen 0%,
+        #4cae4c 80%,
+        #449d44 100%);
+}
+
+tr[class="to-read"]{
+    background-image: linear-gradient(to bottom right,
+        #ffe0b5 0%,
+        #f3ba69 80%,
+        #eb9316 100%);
+}
+
+tr[class="in-progress"]{
+    background-image: linear-gradient(to bottom right,
+        #97ceff 0%,
+        #62aef0 80%,
+        #204d74 100%);
+}
+
+span{
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"]{
+    border: 2px darkred solid;
+    background-image: linear-gradient(to bottom left,
+                #ff7a7a 0%,
+                #ff4141 80%,
+                #c50000 100%);
+}
+
+tr[class="read"] span[class="status"]{
+    border: 2px darkgreen solid;
+    background-image: linear-gradient(to bottom left,
+                #caffc9 0%,
+                #8affa8 80%,
+                #1cff1c 100%);
+}
+
+tr[class="in-progress"] span[class="status"]{
+    border: 2px darkblue solid;
+    background-image: linear-gradient(to bottom left,
+                #c9ebff 0%,
+                #8ac6ff 80%,
+                #1cbfff 100%);
+}
+
+span[class="status"],span[class^="rate"]{
+    height: 20px;
+    width: 120px;
+    padding: 12px;
+    background-color: beige;
+    border-radius: 20px;
+}
+
+span[class^="rate"]{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: darkgoldenrod solid 2px;
+}
+
+span[class^="rate"]>span{
+    border: 2px black solid;
+    border-radius: 100%;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    background-color: wheat;
+}
+
+span[class~="one"]> :first-child{
+    background-image: linear-gradient(to bottom left,
+        #caffc9 0%,
+        #00f53d 80%,
+        #006e00 100%);
+}
+
+span[class~="two"]> :nth-child(-n+2){
+    background-image: linear-gradient(to bottom left,
+        #caffc9 0%,
+        #00f53d 80%,
+        #006e00 100%);
+}
+
+span[class~="three"] span{
+    background-image: linear-gradient(to bottom left,
+        #caffc9 0%,
+        #00f53d 80%,
+        #006e00 100%);
+}
+
+th{
+    font-size: large;
+    text-align: start;
+}
+
+td{
+    padding: 20px 20px ;
+    font-size: large;
+    font-weight: light;
+    text-align: start;
+}
+
+span[class="status"]{
+    text-align: center;
+}
